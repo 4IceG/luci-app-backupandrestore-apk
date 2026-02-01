@@ -6,6 +6,9 @@
 #
 #  Copyright 2026 Rafał Wabik - IceG - From eko.one.pl forum
 #  
+#  Package based on backupandrestore-apk package.
+#  See github.com/obsy/packages/blob/master/backupandrestore-apk
+#  
 #  Licensed to the GNU General Public License v3.0.
 #  
 ##################################################################################################################
