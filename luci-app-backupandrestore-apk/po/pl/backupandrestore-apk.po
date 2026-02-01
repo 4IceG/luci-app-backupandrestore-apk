@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: pl\n"
+
+msgid "Backup and restore packages"
+msgstr "Kopia / Przywracanie pakietów"
+
+msgid "Backup and Restore APK Packages"
+msgstr "Tworzenie kopii zapasowej i przywracanie pakietów APK"
+
+msgid "Package allows user to create a list of installed packages and reinstall packages from this list."
+msgstr "Pakiet umożliwia użytkownikowi utworzenie listy doinstalowanych pakietów i ponowne zainstalowanie pakietów z tak przygotowanej listy."
+
+msgid "Installation progress:"
+msgstr "Postęp instalacji pakietów:"
+
+msgid "Number of packages in list:"
+msgstr "Liczba pakietów na liście:"
+
+msgid "Actions:"
+msgstr "Akcje:"
+
+msgid "Create list"
+msgstr "Utwórz listę"
+
+msgid "Install packages from list"
+msgstr "Zainstaluj pakiet(-y) z listy"
+
+msgid "List file actions:"
+msgstr "Akcje dla listy pakietów:"
+
+msgid "Load list"
+msgstr "Załaduj listę"
+
+msgid "Save"
+msgstr "Zapisz"
+
+msgid "Clear"
+msgstr "Wyczyść"
+
+msgid "Confirm clear list"
+msgstr "Potwierdź wyczyszczenie listy"
+
+msgid "Are you sure you want to clear the package list?"
+msgstr "Czy na pewno chcesz wyczyścić listę pakietów?"
+
+msgid "Clear"
+msgstr "Wyczyść"
+
+msgid "List cleared"
+msgstr "Lista wyczyszczona"
+
+msgid "Error clearing list: %s"
+msgstr "Błąd czyszczenia listy: %s"
+
+msgid "Please wait... installing packages from list"
+msgstr "Proszę czekać... trwa instalacja pakietów z listy"
+
+msgid "Package list"
+msgstr "Lista pakietów"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Package name"
+msgstr "Nazwa pakietu"
+
+msgid "Installing..."
+msgstr "Instalowanie..."
+
+msgid "Installed"
+msgstr "Zainstalowano"
+
+msgid "No packages in list"
+msgstr "Brak pakietów na liście"
+
+msgid "Click \"Create list\" to save installed packages"
+msgstr "Kliknij \"Utwórz listę\" aby zapisać zainstalowane pakiety"
+
+msgid "Creating package list"
+msgstr "Tworzenie listy pakietów"
+
+msgid "Saving package list..."
+msgstr "Zapisywanie listy pakietów..."
+
+msgid "List created. Saved %d packages."
+msgstr "Lista utworzona. Zapisano %d pakietów."
+
+msgid "Error creating list."
+msgstr "Błąd tworzenia listy."
+
+msgid "Error: %s"
+msgstr "Błąd: %s"
+
+msgid "No packages. Create list first."
+msgstr "Brak pakietów. Utwórz najpierw listę."
+
+msgid "Confirmation"
+msgstr "Potwierdzenie"
+
+msgid "Install %d packages from list?"
+msgstr "Zainstalować %d pakiet(-y) z listy?"
+
+msgid "Cancel"
+msgstr "Anuluj"
+
+msgid "Install"
+msgstr "Zainstaluj"
+
+msgid "Waiting for installation..."
+msgstr "Oczekuje na instalację..."
+
+msgid "Error monitoring progress"
+msgstr "Błąd podczas monitorowania postępu"
+
+msgid "Installation error"
+msgstr "Błąd instalacji"
+
+msgid "File list-user-installed-packages.txt has been loaded"
+msgstr "Plik list-user-installed-packages.txt został wczytany"
+
+msgid "Write error: %s"
+msgstr "Błąd zapisu: %s"
+
+msgid "File list-user-installed-packages.txt downloaded"
+msgstr "Plik list-user-installed-packages.txt został pobrany"
+
+msgid "Read error: %s"
+msgstr "Błąd odczytu: %s"
+
+msgid "Installation completed"
+msgstr "Instalacja zakończona"
+
+msgid "Installing: "
+msgstr "Instalowanie: "
+
+msgid "Installing packages"
+msgstr "Instalowanie pakietów"
+
+msgid "Editing package lists"
+msgstr "Edycja listy pakietów"
+
+msgid "The window allows the user to edit the list of installed packages."
+msgstr "Okno umożliwia użytkownikowi edycję listy doinstalowanych pakietów."
+
+msgid "Close"
+msgstr "Zamknij"
+
+msgid "Undo"
+msgstr "Cofnij"
+
+msgid "Unable to reload the file"
+msgstr "Nie można ponownie wczytać pliku"
+
+msgid "Save"
+msgstr "Zapisz"
+
+msgid "Package list has been saved"
+msgstr "Lista pakietów została zapisana"
+
+msgid "Unable to save the file"
+msgstr "Nie można zapisać pliku"
+
+msgid "Read error: "
+msgstr "Błąd odczytu: "
+
+msgid "Remove from list"
+msgstr "Usuń z listy"
+
+msgid "Remove..."
+msgstr "Usuń..."
+
+msgid "Remove \"%s\" from the package list?"
+msgstr "Usunąć \"%s\" z listy pakietów?"
+
+msgid "Package \"%s\" removed from list"
+msgstr "Pakiet \"%s\" został usunięty z listy"
+
+msgid "Error removing package: "
+msgstr "Błąd podczas usuwania pakietu: "
+
+msgid "Uninstalling..."
+msgstr "Usuwanie pakietu..."
+
+msgid "Uninstall package \"%s\"? This will remove the package from your system."
+msgstr "Odinstalować pakiet \"%s\"? Spowoduje to usunięcie pakietu z systemu."
+
+msgid "Please wait... Uninstalling package \"%s\""
+msgstr "Proszę czekać... Trwa odinstalowywanie pakietu \"%s\""
+
+msgid "Package \"%s\" uninstalled successfully"
+msgstr "Pakiet \"%s\" został pomyślnie odinstalowany"
+
+msgid "Error uninstalling package: "
+msgstr "Błąd podczas odinstalowywania pakietu: "
+
+msgid "Refresh package list"
+msgstr "Odśwież listę pakietów"
+
+msgid "Refresh"
+msgstr "Odśwież"

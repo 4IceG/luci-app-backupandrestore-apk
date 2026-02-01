@@ -1,0 +1,49 @@
+#!/bin/sh
+
+. /usr/share/libubox/jshn.sh
+
+##################################################################################################################
+#
+#  Copyright 2026 Rafał Wabik - IceG - From eko.one.pl forum
+#  
+#  Licensed to the GNU General Public License v3.0.
+#  
+##################################################################################################################
+
+LIBEXEC=/usr/libexec/backupandrestore-apk
+
+case "$1" in
+	list)
+		json_init
+		json_add_object "backup"
+		json_close_object
+		json_add_object "list"
+		json_close_object
+		json_add_object "restore"
+		json_close_object
+		json_add_object "progress"
+		json_close_object
+		json_add_object "count"
+		json_close_object
+		json_dump
+		;;
+	call)
+		case "$2" in
+			backup)
+				$LIBEXEC backup
+				;;
+			list)
+				$LIBEXEC list
+				;;
+			restore)
+				$LIBEXEC restore
+				;;
+			progress)
+				$LIBEXEC progress
+				;;
+			count)
+				$LIBEXEC count
+				;;
+		esac
+		;;
+esac

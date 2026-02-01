@@ -1,0 +1,127 @@
+#!/bin/sh
+
+##################################################################################################################
+#
+#  Copyright 2026 Rafał Wabik - IceG - From eko.one.pl forum
+#  
+#  Package based on backupandrestore-apk package.
+#  See github.com/obsy/packages/blob/master/backupandrestore-apk
+#  
+#  Licensed to the GNU General Public License v3.0.
+#  
+##################################################################################################################
+
+BACKUPDIR=/etc/backup
+PKGSLIST=list-user-installed-packages.txt
+PROGRESS_FILE=/tmp/pkg_install_progress
+STATUS_FILE=/tmp/pkg_install_status
+
+case "$1" in
+	backup)
+		mkdir -p $BACKUPDIR
+		if [ -e /rom/etc/apk/world ]; then
+			grep -Fxv -f /rom/etc/apk/world /etc/apk/world > $BACKUPDIR/$PKGSLIST
+		else
+			cat /etc/apk/world > $BACKUPDIR/$PKGSLIST
+		fi
+		
+		if ! grep -q $BACKUPDIR/$PKGSLIST /etc/sysupgrade.conf; then
+			echo $BACKUPDIR/$PKGSLIST >> /etc/sysupgrade.conf
+		fi
+		
+		COUNT=$(wc -l < $BACKUPDIR/$PKGSLIST)
+		echo "{\"success\":true,\"count\":$COUNT}"
+		;;
+		
+	list)
+		if [ ! -f $BACKUPDIR/$PKGSLIST ]; then
+			echo "{\"success\":true,\"packages\":[],\"exists\":false}"
+			exit 0
+		fi
+		
+		echo -n "{\"success\":true,\"exists\":true,\"packages\":["
+		FIRST=1
+		while read -r pkg; do
+			[ -z "$pkg" ] && continue
+			[ $FIRST -eq 0 ] && echo -n ","
+			echo -n "\"$pkg\""
+			FIRST=0
+		done < $BACKUPDIR/$PKGSLIST
+		echo "]}"
+		;;
+		
+	restore)
+		if [ ! -s $BACKUPDIR/$PKGSLIST ]; then
+			echo "{\"success\":false,\"error\":\"Brak listy pakietów\"}"
+			exit 0
+		fi
+
+		{
+			TOTAL=$(wc -l < $BACKUPDIR/$PKGSLIST)
+			CURRENT=0
+			FAILED=0
+			
+			echo "running" > $STATUS_FILE
+			echo "0:$TOTAL" > $PROGRESS_FILE
+			
+			apk update >/dev/null 2>&1
+			
+			while read -r pkg; do
+				if [ -n "$pkg" ]; then
+					CURRENT=$((CURRENT + 1))
+					echo "$CURRENT:$TOTAL:$pkg" > $PROGRESS_FILE
+					
+					if ! apk add $pkg >/dev/null 2>&1; then
+						FAILED=$((FAILED + 1))
+					fi
+				fi
+			done < $BACKUPDIR/$PKGSLIST
+			
+			echo "completed" > $STATUS_FILE
+			echo "$TOTAL:$TOTAL:$FAILED" > $PROGRESS_FILE
+			
+			sleep 60
+			rm -f $PROGRESS_FILE $STATUS_FILE
+		} &
+		
+		echo "{\"success\":true,\"message\":\"Instalacja rozpoczęta\"}"
+		;;
+		
+	progress)
+		if [ ! -f $PROGRESS_FILE ]; then
+			echo "{\"active\":false}"
+			exit 0
+		fi
+		
+		STATUS=$(cat $STATUS_FILE 2>/dev/null || echo "unknown")
+		PROGRESS=$(cat $PROGRESS_FILE)
+		
+		CURRENT=$(echo $PROGRESS | cut -d: -f1)
+		TOTAL=$(echo $PROGRESS | cut -d: -f2)
+		PACKAGE=$(echo $PROGRESS | cut -d: -f3)
+		FAILED=$(echo $PROGRESS | cut -d: -f3)
+		
+		if [ "$STATUS" = "completed" ]; then
+			echo "{\"active\":false,\"completed\":true,\"total\":$TOTAL,\"failed\":$FAILED}"
+		else
+			PERCENT=$((CURRENT * 100 / TOTAL))
+			echo "{\"active\":true,\"current\":$CURRENT,\"total\":$TOTAL,\"percent\":$PERCENT,\"package\":\"$PACKAGE\"}"
+		fi
+		;;
+		
+	count)
+		if [ ! -f $BACKUPDIR/$PKGSLIST ]; then
+			echo "{\"success\":true,\"count\":0,\"exists\":false}"
+		else
+			COUNT=$(wc -l < $BACKUPDIR/$PKGSLIST)
+			echo "{\"success\":true,\"count\":$COUNT,\"exists\":true}"
+		fi
+		;;
+		
+	*)
+		echo "{\"error\":\"Unknown command: $1\"}"
+		exit 1
+		;;
+esac
+
+exit 0

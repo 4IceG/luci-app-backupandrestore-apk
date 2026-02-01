@@ -1,0 +1,202 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: de\n"
+
+msgid "Backup and restore packages"
+msgstr "Pakete sichern und wiederherstellen"
+
+msgid "Backup and Restore APK Packages"
+msgstr "APK-Pakete sichern und wiederherstellen"
+
+msgid "Package allows user to create a list of installed packages and reinstall packages from this list."
+msgstr "Das Paket ermöglicht dem Benutzer, eine Liste der installierten Pakete zu erstellen und Pakete aus dieser Liste neu zu installieren."
+
+msgid "Installation progress:"
+msgstr "Installationsfortschritt:"
+
+msgid "Number of packages in list:"
+msgstr "Anzahl der Pakete in der Liste:"
+
+msgid "Actions:"
+msgstr "Aktionen:"
+
+msgid "Create list"
+msgstr "Liste erstellen"
+
+msgid "Install packages from list"
+msgstr "Pakete aus der Liste installieren"
+
+msgid "List file actions:"
+msgstr "Aktionen für Listendatei:"
+
+msgid "Load list"
+msgstr "Liste laden"
+
+msgid "Save"
+msgstr "Speichern"
+
+msgid "Clear"
+msgstr "Löschen"
+
+msgid "Confirm clear list"
+msgstr "Löschen der Liste bestätigen"
+
+msgid "Are you sure you want to clear the package list?"
+msgstr "Möchten Sie die Paketliste wirklich löschen?"
+
+msgid "Clear"
+msgstr "Löschen"
+
+msgid "List cleared"
+msgstr "Liste gelöscht"
+
+msgid "Error clearing list: %s"
+msgstr "Fehler beim Löschen der Liste: %s"
+
+msgid "Please wait... installing packages from list"
+msgstr "Bitte warten... Pakete aus der Liste werden installiert"
+
+msgid "Package list"
+msgstr "Paketliste"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Package name"
+msgstr "Paketname"
+
+msgid "Installing..."
+msgstr "Wird installiert..."
+
+msgid "Installed"
+msgstr "Installiert"
+
+msgid "No packages in list"
+msgstr "Keine Pakete in der Liste"
+
+msgid "Click \"Create list\" to save installed packages"
+msgstr "Klicken Sie auf \"Liste erstellen\", um installierte Pakete zu speichern"
+
+msgid "Creating package list"
+msgstr "Paketliste wird erstellt"
+
+msgid "Saving package list..."
+msgstr "Paketliste wird gespeichert..."
+
+msgid "List created. Saved %d packages."
+msgstr "Liste erstellt. %d Pakete gespeichert."
+
+msgid "Error creating list."
+msgstr "Fehler beim Erstellen der Liste."
+
+msgid "Error: %s"
+msgstr "Fehler: %s"
+
+msgid "No packages. Create list first."
+msgstr "Keine Pakete. Erstellen Sie zuerst eine Liste."
+
+msgid "Confirmation"
+msgstr "Bestätigung"
+
+msgid "Install %d packages from list?"
+msgstr "%d Pakete aus der Liste installieren?"
+
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgid "Install"
+msgstr "Installieren"
+
+msgid "Waiting for installation..."
+msgstr "Warten auf Installation..."
+
+msgid "Error monitoring progress"
+msgstr "Fehler beim Überwachen des Fortschritts"
+
+msgid "Installation error"
+msgstr "Installationsfehler"
+
+msgid "File list-user-installed-packages.txt has been loaded"
+msgstr "Datei list-user-installed-packages.txt wurde geladen"
+
+msgid "Write error: %s"
+msgstr "Schreibfehler: %s"
+
+msgid "File list-user-installed-packages.txt downloaded"
+msgstr "Datei list-user-installed-packages.txt heruntergeladen"
+
+msgid "Read error: %s"
+msgstr "Lesefehler: %s"
+
+msgid "Installation completed"
+msgstr "Installation abgeschlossen"
+
+msgid "Installing: "
+msgstr "Installiere: "
+
+msgid "Installing packages"
+msgstr "Pakete werden installiert"
+
+msgid "Editing package lists"
+msgstr "Paketlisten bearbeiten"
+
+msgid "The window allows the user to edit the list of installed packages."
+msgstr "Das Fenster ermöglicht dem Benutzer, die Liste der installierten Pakete zu bearbeiten."
+
+msgid "Close"
+msgstr "Schließen"
+
+msgid "Undo"
+msgstr "Rückgängig"
+
+msgid "Unable to reload the file"
+msgstr "Datei kann nicht neu geladen werden"
+
+msgid "Save"
+msgstr "Speichern"
+
+msgid "Package list has been saved"
+msgstr "Paketliste wurde gespeichert"
+
+msgid "Unable to save the file"
+msgstr "Datei kann nicht gespeichert werden"
+
+msgid "Read error: "
+msgstr "Lesefehler: "
+
+msgid "Remove from list"
+msgstr "Aus Liste entfernen"
+
+msgid "Remove..."
+msgstr "Entfernen..."
+
+msgid "Remove \"%s\" from the package list?"
+msgstr "\"%s\" aus der Paketliste entfernen?"
+
+msgid "Package \"%s\" removed from list"
+msgstr "Paket \"%s\" wurde aus der Liste entfernt"
+
+msgid "Error removing package: "
+msgstr "Fehler beim Entfernen des Pakets: "
+
+msgid "Uninstalling..."
+msgstr "Wird deinstalliert..."
+
+msgid "Uninstall package \"%s\"? This will remove the package from your system."
+msgstr "Paket \"%s\" deinstallieren? Dies entfernt das Paket von Ihrem System."
+
+msgid "Please wait... Uninstalling package \"%s\""
+msgstr "Bitte warten... Paket \"%s\" wird deinstalliert"
+
+msgid "Package \"%s\" uninstalled successfully"
+msgstr "Paket \"%s\" wurde erfolgreich deinstalliert"
+
+msgid "Error uninstalling package: "
+msgstr "Fehler beim Deinstallieren des Pakets: "
+
+msgid "Refresh package list"
+msgstr "Paketliste aktualisieren"
+
+msgid "Refresh"
+msgstr "Aktualisieren"

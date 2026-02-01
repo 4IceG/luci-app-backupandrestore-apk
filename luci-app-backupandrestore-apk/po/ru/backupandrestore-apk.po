@@ -1,0 +1,204 @@
+msgid ""
+msgstr ""
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Backup and restore packages"
+msgstr "Резервное копирование и восстановление пакетов"
+
+msgid "Backup and Restore APK Packages"
+msgstr "Резервное копирование и восстановление APK-пакетов"
+
+msgid "Package allows user to create a list of installed packages and reinstall packages from this list."
+msgstr "Пакет позволяет пользователю создать список установленных пакетов и переустановить пакеты из этого списка."
+
+msgid "Installation progress:"
+msgstr "Прогресс установки:"
+
+msgid "Number of packages in list:"
+msgstr "Количество пакетов в списке:"
+
+msgid "Actions:"
+msgstr "Действия:"
+
+msgid "Create list"
+msgstr "Создать список"
+
+msgid "Install packages from list"
+msgstr "Установить пакеты из списка"
+
+msgid "List file actions:"
+msgstr "Действия с файлом списка:"
+
+msgid "Load list"
+msgstr "Загрузить список"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Clear"
+msgstr "Очистить"
+
+msgid "Confirm clear list"
+msgstr "Подтвердите очистку списка"
+
+msgid "Are you sure you want to clear the package list?"
+msgstr "Вы уверены, что хотите очистить список пакетов?"
+
+msgid "Clear"
+msgstr "Очистить"
+
+msgid "List cleared"
+msgstr "Список очищен"
+
+msgid "Error clearing list: %s"
+msgstr "Ошибка при очистке списка: %s"
+
+msgid "Please wait... installing packages from list"
+msgstr "Пожалуйста, подождите... установка пакетов из списка"
+
+msgid "Package list"
+msgstr "Список пакетов"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Package name"
+msgstr "Имя пакета"
+
+msgid "Installing..."
+msgstr "Установка..."
+
+msgid "Installed"
+msgstr "Установлен"
+
+msgid "No packages in list"
+msgstr "Нет пакетов в списке"
+
+msgid "Click \"Create list\" to save installed packages"
+msgstr "Нажмите \"Создать список\", чтобы сохранить установленные пакеты"
+
+msgid "Creating package list"
+msgstr "Создание списка пакетов"
+
+msgid "Saving package list..."
+msgstr "Сохранение списка пакетов..."
+
+msgid "List created. Saved %d packages."
+msgstr "Список создан. Сохранено пакетов: %d."
+
+msgid "Error creating list."
+msgstr "Ошибка при создании списка."
+
+msgid "Error: %s"
+msgstr "Ошибка: %s"
+
+msgid "No packages. Create list first."
+msgstr "Нет пакетов. Сначала создайте список."
+
+msgid "Confirmation"
+msgstr "Подтверждение"
+
+msgid "Install %d packages from list?"
+msgstr "Установить %d пакетов из списка?"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Install"
+msgstr "Установить"
+
+msgid "Waiting for installation..."
+msgstr "Ожидание установки..."
+
+msgid "Error monitoring progress"
+msgstr "Ошибка мониторинга прогресса"
+
+msgid "Installation error"
+msgstr "Ошибка установки"
+
+msgid "File list-user-installed-packages.txt has been loaded"
+msgstr "Файл list-user-installed-packages.txt загружен"
+
+msgid "Write error: %s"
+msgstr "Ошибка записи: %s"
+
+msgid "File list-user-installed-packages.txt downloaded"
+msgstr "Файл list-user-installed-packages.txt скачан"
+
+msgid "Read error: %s"
+msgstr "Ошибка чтения: %s"
+
+msgid "Installation completed"
+msgstr "Установка завершена"
+
+msgid "Installing: "
+msgstr "Установка: "
+
+msgid "Installing packages"
+msgstr "Установка пакетов"
+
+msgid "Editing package lists"
+msgstr "Редактирование списков пакетов"
+
+msgid "The window allows the user to edit the list of installed packages."
+msgstr "Окно позволяет пользователю редактировать список установленных пакетов."
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Undo"
+msgstr "Отменить"
+
+msgid "Unable to reload the file"
+msgstr "Не удается перезагрузить файл"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Package list has been saved"
+msgstr "Список пакетов сохранен"
+
+msgid "Unable to save the file"
+msgstr "Не удается сохранить файл"
+
+msgid "Read error: "
+msgstr "Ошибка чтения: "
+
+msgid "Remove from list"
+msgstr "Удалить из списка"
+
+msgid "Remove..."
+msgstr "Удалить..."
+
+msgid "Remove \"%s\" from the package list?"
+msgstr "Удалить \"%s\" из списка пакетов?"
+
+msgid "Package \"%s\" removed from list"
+msgstr "Пакет \"%s\" удален из списка"
+
+msgid "Error removing package: "
+msgstr "Ошибка при удалении пакета: "
+
+msgid "Uninstalling..."
+msgstr "Удаление..."
+
+msgid "Uninstall package \"%s\"? This will remove the package from your system."
+msgstr "Удалить пакет \"%s\"? Это удалит пакет из вашей системы."
+
+msgid "Please wait... Uninstalling package \"%s\""
+msgstr "Пожалуйста, подождите... Удаление пакета \"%s\""
+
+msgid "Package \"%s\" uninstalled successfully"
+msgstr "Пакет \"%s\" успешно удален"
+
+msgid "Error uninstalling package: "
+msgstr "Ошибка при удалении пакета: "
+
+msgid "Refresh package list"
+msgstr "Обновить список пакетов"
+
+msgid "Refresh"
+msgstr "Обновить"

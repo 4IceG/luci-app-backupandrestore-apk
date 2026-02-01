@@ -1,0 +1,35 @@
+{
+	"luci-app-backupandrestore-apk": {
+		"description": "Grant access to LuCI JS backupandrestore-apk",
+		"read": {
+			"ubus": {
+				"backupandrestore-apk": [
+					"list",
+					"count",
+					"progress"
+				]
+			},
+			"file": {
+				"/etc/backup/list-user-installed-packages.txt": ["read"],
+				"/usr/bin/opkg list-installed": ["exec"],
+				"/usr/libexec/package-manager-call list-installed": ["exec"],
+				"/usr/libexec/opkg-list installed": ["exec"],
+				"/usr/libexec/opkg-call list-installed": ["exec"]
+			}
+		},
+		"write": {
+			"ubus": {
+				"backupandrestore-apk": [
+					"backup",
+					"restore"
+				]
+			},
+			"file": {
+				"/etc/backup/list-user-installed-packages.txt": ["write"],
+				"/usr/bin/opkg remove": ["exec"],
+				"/usr/libexec/package-manager-call remove": ["exec"],
+				"/usr/libexec/opkg-call remove": ["exec"]
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"admin/system/packages": {
+		"title": "Backup and restore packages",
+		"order": 45,
+		"action": {
+			"type": "view",
+			"path": "system/backupandrestore-apk"
+		},
+		"depends": {
+			"acl": [ "luci-app-backupandrestore-apk" ]
+		}
+	}
+}
