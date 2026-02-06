@@ -10,7 +10,7 @@ msgid "Backup and Restore APK Packages"
 msgstr "APK-Pakete sichern und wiederherstellen"
 
 msgid "Package allows user to create a list of installed packages and reinstall packages from this list."
-msgstr "Das Paket ermöglicht dem Benutzer, eine Liste der installierten Pakete zu erstellen und Pakete aus dieser Liste neu zu installieren."
+msgstr "Das Paket ermöglicht es dem Benutzer, eine Liste installierter Pakete zu erstellen und Pakete aus dieser Liste neu zu installieren."
 
 msgid "Installation progress:"
 msgstr "Installationsfortschritt:"
@@ -28,7 +28,7 @@ msgid "Install packages from list"
 msgstr "Pakete aus der Liste installieren"
 
 msgid "List file actions:"
-msgstr "Aktionen für Listendatei:"
+msgstr "Listendatei-Aktionen:"
 
 msgid "Load list"
 msgstr "Liste laden"
@@ -43,7 +43,7 @@ msgid "Confirm clear list"
 msgstr "Löschen der Liste bestätigen"
 
 msgid "Are you sure you want to clear the package list?"
-msgstr "Möchten Sie die Paketliste wirklich löschen?"
+msgstr "Sind Sie sicher, dass Sie die Paketliste löschen möchten?"
 
 msgid "Clear"
 msgstr "Löschen"
@@ -67,7 +67,7 @@ msgid "Package name"
 msgstr "Paketname"
 
 msgid "Installing..."
-msgstr "Wird installiert..."
+msgstr "Installiere..."
 
 msgid "Installed"
 msgstr "Installiert"
@@ -96,8 +96,8 @@ msgstr "Fehler: %s"
 msgid "No packages. Create list first."
 msgstr "Keine Pakete. Erstellen Sie zuerst eine Liste."
 
-msgid "Confirmation"
-msgstr "Bestätigung"
+msgid "Installation confirmation"
+msgstr "Installationsbestätigung"
 
 msgid "Install %d packages from list?"
 msgstr "%d Pakete aus der Liste installieren?"
@@ -109,7 +109,7 @@ msgid "Install"
 msgstr "Installieren"
 
 msgid "Waiting for installation..."
-msgstr "Warten auf Installation..."
+msgstr "Warte auf Installation..."
 
 msgid "Error monitoring progress"
 msgstr "Fehler beim Überwachen des Fortschritts"
@@ -129,8 +129,17 @@ msgstr "Datei list-user-installed-packages.txt heruntergeladen"
 msgid "Read error: %s"
 msgstr "Lesefehler: %s"
 
+msgid "Executing apk update command"
+msgstr "Führe apk update-Befehl aus"
+
+msgid "Waiting for the apk update command to complete…"
+msgstr "Warte auf die Fertigstellung des apk update-Befehls…"
+
 msgid "Installation completed"
 msgstr "Installation abgeschlossen"
+
+msgid "Internet connection is required to install packages. Please connect to the internet and refresh the page."
+msgstr "Für die Installation von Paketen ist eine Internetverbindung erforderlich. Bitte stellen Sie eine Internetverbindung her und aktualisieren Sie die Seite."
 
 msgid "Installing: "
 msgstr "Installiere: "
@@ -139,10 +148,10 @@ msgid "Installing packages"
 msgstr "Pakete werden installiert"
 
 msgid "Editing package lists"
-msgstr "Paketlisten bearbeiten"
+msgstr "Paketliste bearbeiten"
 
 msgid "The window allows the user to edit the list of installed packages."
-msgstr "Das Fenster ermöglicht dem Benutzer, die Liste der installierten Pakete zu bearbeiten."
+msgstr "Das Fenster ermöglicht es dem Benutzer, die Liste der installierten Pakete zu bearbeiten."
 
 msgid "Close"
 msgstr "Schließen"
@@ -166,7 +175,7 @@ msgid "Read error: "
 msgstr "Lesefehler: "
 
 msgid "Remove from list"
-msgstr "Aus Liste entfernen"
+msgstr "Aus der Liste entfernen"
 
 msgid "Remove..."
 msgstr "Entfernen..."
@@ -181,10 +190,10 @@ msgid "Error removing package: "
 msgstr "Fehler beim Entfernen des Pakets: "
 
 msgid "Uninstalling..."
-msgstr "Wird deinstalliert..."
+msgstr "Deinstalliere..."
 
 msgid "Uninstall package \"%s\"? This will remove the package from your system."
-msgstr "Paket \"%s\" deinstallieren? Dies entfernt das Paket von Ihrem System."
+msgstr "Paket \"%s\" deinstallieren? Dies wird das Paket von Ihrem System entfernen."
 
 msgid "Please wait... Uninstalling package \"%s\""
 msgstr "Bitte warten... Paket \"%s\" wird deinstalliert"

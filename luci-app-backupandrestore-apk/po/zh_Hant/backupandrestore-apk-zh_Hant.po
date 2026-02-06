@@ -1,0 +1,212 @@
+msgid ""
+msgstr ""
+"Language: zh_TW\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Backup and restore packages"
+msgstr "備份和還原軟體套件"
+
+msgid "Backup and Restore APK Packages"
+msgstr "備份和還原 APK 軟體套件"
+
+msgid "Package allows user to create a list of installed packages and reinstall packages from this list."
+msgstr "該軟體套件允許使用者建立已安裝軟體套件的清單並從此清單重新安裝軟體套件。"
+
+msgid "Installation progress:"
+msgstr "安裝進度："
+
+msgid "Number of packages in list:"
+msgstr "清單中的軟體套件數量："
+
+msgid "Actions:"
+msgstr "操作："
+
+msgid "Create list"
+msgstr "建立清單"
+
+msgid "Install packages from list"
+msgstr "從清單安裝軟體套件"
+
+msgid "List file actions:"
+msgstr "清單檔案操作："
+
+msgid "Load list"
+msgstr "載入清單"
+
+msgid "Save"
+msgstr "儲存"
+
+msgid "Clear"
+msgstr "清除"
+
+msgid "Confirm clear list"
+msgstr "確認清除清單"
+
+msgid "Are you sure you want to clear the package list?"
+msgstr "您確定要清除軟體套件清單嗎？"
+
+msgid "Clear"
+msgstr "清除"
+
+msgid "List cleared"
+msgstr "清單已清除"
+
+msgid "Error clearing list: %s"
+msgstr "清除清單時發生錯誤：%s"
+
+msgid "Please wait... installing packages from list"
+msgstr "請稍候...正在從清單安裝軟體套件"
+
+msgid "Package list"
+msgstr "軟體套件清單"
+
+msgid "Status"
+msgstr "狀態"
+
+msgid "Package name"
+msgstr "軟體套件名稱"
+
+msgid "Installing..."
+msgstr "正在安裝..."
+
+msgid "Installed"
+msgstr "已安裝"
+
+msgid "No packages in list"
+msgstr "清單中沒有軟體套件"
+
+msgid "Click \"Create list\" to save installed packages"
+msgstr "點擊「建立清單」以儲存已安裝的軟體套件"
+
+msgid "Creating package list"
+msgstr "正在建立軟體套件清單"
+
+msgid "Saving package list..."
+msgstr "正在儲存軟體套件清單..."
+
+msgid "List created. Saved %d packages."
+msgstr "清單已建立。已儲存 %d 個軟體套件。"
+
+msgid "Error creating list."
+msgstr "建立清單時發生錯誤。"
+
+msgid "Error: %s"
+msgstr "錯誤：%s"
+
+msgid "No packages. Create list first."
+msgstr "沒有軟體套件。請先建立清單。"
+
+msgid "Installation confirmation"
+msgstr "安裝確認"
+
+msgid "Install %d packages from list?"
+msgstr "從清單安裝 %d 個軟體套件？"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Install"
+msgstr "安裝"
+
+msgid "Waiting for installation..."
+msgstr "等待安裝..."
+
+msgid "Error monitoring progress"
+msgstr "監控進度時發生錯誤"
+
+msgid "Installation error"
+msgstr "安裝錯誤"
+
+msgid "File list-user-installed-packages.txt has been loaded"
+msgstr "檔案 list-user-installed-packages.txt 已載入"
+
+msgid "Write error: %s"
+msgstr "寫入錯誤：%s"
+
+msgid "File list-user-installed-packages.txt downloaded"
+msgstr "檔案 list-user-installed-packages.txt 已下載"
+
+msgid "Read error: %s"
+msgstr "讀取錯誤：%s"
+
+msgid "Executing apk update command"
+msgstr "正在執行 apk update 指令"
+
+msgid "Waiting for the apk update command to complete…"
+msgstr "等待 apk update 指令完成…"
+
+msgid "Installation completed"
+msgstr "安裝完成"
+
+msgid "Internet connection is required to install packages. Please connect to the internet and refresh the page."
+msgstr "安裝軟體套件需要網際網路連線。請連線至網際網路並重新整理頁面。"
+
+msgid "Installing: "
+msgstr "正在安裝："
+
+msgid "Installing packages"
+msgstr "正在安裝軟體套件"
+
+msgid "Editing package lists"
+msgstr "編輯軟體套件清單"
+
+msgid "The window allows the user to edit the list of installed packages."
+msgstr "該視窗允許使用者編輯已安裝軟體套件的清單。"
+
+msgid "Close"
+msgstr "關閉"
+
+msgid "Undo"
+msgstr "復原"
+
+msgid "Unable to reload the file"
+msgstr "無法重新載入檔案"
+
+msgid "Save"
+msgstr "儲存"
+
+msgid "Package list has been saved"
+msgstr "軟體套件清單已儲存"
+
+msgid "Unable to save the file"
+msgstr "無法儲存檔案"
+
+msgid "Read error: "
+msgstr "讀取錯誤："
+
+msgid "Remove from list"
+msgstr "從清單中移除"
+
+msgid "Remove..."
+msgstr "移除..."
+
+msgid "Remove \"%s\" from the package list?"
+msgstr "從軟體套件清單中移除「%s」？"
+
+msgid "Package \"%s\" removed from list"
+msgstr "軟體套件「%s」已從清單中移除"
+
+msgid "Error removing package: "
+msgstr "移除軟體套件時發生錯誤："
+
+msgid "Uninstalling..."
+msgstr "正在解除安裝..."
+
+msgid "Uninstall package \"%s\"? This will remove the package from your system."
+msgstr "解除安裝軟體套件「%s」？這將從您的系統中移除該軟體套件。"
+
+msgid "Please wait... Uninstalling package \"%s\""
+msgstr "請稍候...正在解除安裝軟體套件「%s」"
+
+msgid "Package \"%s\" uninstalled successfully"
+msgstr "軟體套件「%s」已成功解除安裝"
+
+msgid "Error uninstalling package: "
+msgstr "解除安裝軟體套件時發生錯誤："
+
+msgid "Refresh package list"
+msgstr "重新整理軟體套件清單"
+
+msgid "Refresh"
+msgstr "重新整理"

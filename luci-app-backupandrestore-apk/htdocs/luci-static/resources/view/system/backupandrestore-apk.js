@@ -130,12 +130,38 @@ let callPackageCount = rpc.declare({
 	expect: {}
 });
 
+let callPackageReset = rpc.declare({
+	object: 'backupandrestore-apk',
+	method: 'reset',
+	expect: {}
+});
+
 let packageStates = {};
 let isInstalling = false;
 let wasInstalling = false;
+let hasInternet = false;
+let internetCheckHosts = ['8.8.8.8', '1.1.1.1', '8.8.4.4'];
 
 return view.extend({
+	checkInternet: async function() {
+		for(let host of internetCheckHosts) {
+			try {
+				let res = await fs.exec('/bin/ping', ['-c', '1', '-W', '2', host]);
+				if(res.code === 0) {
+					hasInternet = true;
+					return true;
+				}
+			} catch(e) {
+				// None
+			}
+		}
+		hasInternet = false;
+		return false;
+	},
+
 	load: function() {
+		let self = this;
+		
 		return Promise.all([
 			callPackageList(),
 			callPackageCount(),
@@ -154,7 +180,8 @@ return view.extend({
 						return data ? data.split('\n') : [];
 					}),
 				[]
-			)
+			),
+			self.checkInternet()
 		]);
 	},
 
@@ -231,22 +258,28 @@ return view.extend({
 		
 		if (installAlert && data.active) {
 			installAlert.style.display = 'block';
+
+			let spinnerElement = installAlert.querySelector('.spinning');
+			if (spinnerElement) {
+				if (data.package === 'apk update') {
+					spinnerElement.textContent = _('Waiting for the apk update command to complete…');
+				} else {
+					spinnerElement.textContent = _('Please wait... installing packages from list');
+				}
+			}
 		}
 
 		if (progressLabel) {
-			if (data.package) {
+			if (data.package === 'apk update') {
+				progressLabel.textContent = _('Executing apk update command') + '...';
+			} else if (data.package) {
 				progressLabel.textContent = _('Installing: ') + data.package + ' (' + data.current + ' / ' + data.total + ')';
 			} else {
 				progressLabel.textContent = _('Installing packages') + ' (' + data.current + ' / ' + data.total + ')';
 			}
 		}
 		
-		let percent = Math.floor((data.current / data.total) * 100);
-		mainProgressBar.firstElementChild.style.width = percent + '%';
-		mainProgressBar.firstElementChild.textContent = '\u00a0';
-		mainProgressBar.setAttribute('title', '');
-		
-		if (data.package) {
+		if (data.package && data.package !== 'apk update') {
 			for (let pkg in packageStates) {
 				if (packageStates[pkg] === 'installing' && pkg !== data.package) {
 					packageStates[pkg] = 'installed';
@@ -258,6 +291,16 @@ return view.extend({
 				packageStates[data.package] = 'installing';
 				this.updatePackageRow(data.package, 'installing');
 			}
+			let completed = data.current - 1;
+			let percent = Math.floor((completed / data.total) * 100);
+			mainProgressBar.firstElementChild.style.width = percent + '%';
+			mainProgressBar.firstElementChild.textContent = '\u00a0';
+			mainProgressBar.setAttribute('title', '');
+		} else {
+			let percent = Math.floor((data.current / data.total) * 100);
+			mainProgressBar.firstElementChild.style.width = percent + '%';
+			mainProgressBar.firstElementChild.textContent = '\u00a0';
+			mainProgressBar.setAttribute('title', '');
 		}
 		
 		return true;
@@ -301,7 +344,7 @@ return view.extend({
 		let clearBtn = document.getElementById('clear-btn');
 		
 		if (installBtn) {
-			installBtn.disabled = isInstalling;
+			installBtn.disabled = isInstalling || !hasInternet;
 		}
 		if (createBtn) {
 			createBtn.disabled = isInstalling;
@@ -350,7 +393,7 @@ return view.extend({
 				return;
 			}
 
-			ui.showModal(_('Confirmation'), [
+			ui.showModal(_('Installation confirmation'), [
 				E('p', {}, _('Install %d packages from list?').format(countData.count)),
 				E('div', { 'class': 'right' }, [
 					E('button', { 'class': 'btn cbi-button-neutral', 'click': ui.hideModal }, _('Cancel')),
@@ -377,12 +420,29 @@ return view.extend({
 				
 				let installAlert = document.getElementById('install-alert');
 				if (installAlert) {
+					installAlert.innerHTML = '';
+					installAlert.appendChild(E('span', { 'class': 'spinning' }, _('Waiting for the apk update command to complete…')));
 					installAlert.style.display = 'block';
 				}
 
 				let pollFn = function() {
 					return callPackageProgress().then(function(prog) {
 						console.log('Poll tick, progress:', prog);
+
+						if (prog.active && prog.package && prog.package.includes('apk update')) {
+							let installAlert = document.getElementById('install-alert');
+							if (installAlert) {
+								installAlert.innerHTML = '';
+								installAlert.appendChild(E('span', { 'class': 'spinning' }, _('Waiting for the apk update command to complete…')));
+							}
+						} else if (prog.active) {
+							let installAlert = document.getElementById('install-alert');
+							if (installAlert && installAlert.querySelector('span') && !installAlert.querySelector('span').textContent.includes(_('Please wait... installing packages from list'))) {
+								installAlert.innerHTML = '';
+								installAlert.appendChild(E('span', { 'class': 'spinning' }, _('Please wait... installing packages from list')));
+							}
+						}
+						
 						let stillActive = self.updateProgress(prog);
 						console.log('stillActive:', stillActive);
 						if (!stillActive) {
@@ -403,7 +463,7 @@ return view.extend({
 				ui.addNotification(null, E('p', {}, result.error || _('Installation error')), 'error');
 			}
 		}).catch(function(err) {
-			ui.addNotification(null, E('p', {}, 'Błąd: ' + err.message), 'error');
+			ui.addNotification(null, E('p', {}, 'Error: ' + err.message), 'error');
 		});
 	},
 
@@ -418,6 +478,9 @@ return view.extend({
 				let reader = new FileReader();
 				reader.onload = function(e) {
 					fs.write('/etc/backup/list-user-installed-packages.txt', e.target.result)
+						.then(function() {
+							return callPackageReset();
+						})
 						.then(function() {
 							popTimeout(null, E('p', {}, _('File list-user-installed-packages.txt has been loaded')), 5000, 'info');
 							setTimeout(function() { window.location.reload(); }, 1000);
@@ -515,6 +578,9 @@ return view.extend({
 						ui.hideModal();
 						
 						fs.remove('/etc/backup/list-user-installed-packages.txt')
+							.then(function() {
+								return callPackageReset();
+							})
 							.then(function() {
 								popTimeout(null, E('p', {}, _('List cleared')), 5000, 'info');
 								setTimeout(function() { window.location.reload(); }, 1000);
@@ -749,7 +815,7 @@ return view.extend({
 							'id': 'install-btn',
 							'class': 'btn cbi-button-positive',
 							'click': ui.createHandlerFn(this, 'handleRestore'),
-							'disabled': !canInstall ? true : null
+							'disabled': (!canInstall || !hasInternet) ? true : null
 						}, _('Install packages from list'))
 					])
 				]),
@@ -814,6 +880,10 @@ return view.extend({
 				}
 				self.updateProgress(progress);
 			});
+		}
+
+		if (!hasInternet) {
+			ui.addNotification(null, E('p', {}, _('Internet connection is required to install packages. Please connect to the internet and refresh the page.')), 'alert');
 		}
 
 		return view;

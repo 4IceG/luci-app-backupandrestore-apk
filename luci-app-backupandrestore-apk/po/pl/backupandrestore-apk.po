@@ -96,8 +96,8 @@ msgstr "Błąd: %s"
 msgid "No packages. Create list first."
 msgstr "Brak pakietów. Utwórz najpierw listę."
 
-msgid "Confirmation"
-msgstr "Potwierdzenie"
+msgid "Installation confirmation"
+msgstr "Potwierdzenie instalacji"
 
 msgid "Install %d packages from list?"
 msgstr "Zainstalować %d pakiet(-y) z listy?"
@@ -129,8 +129,17 @@ msgstr "Plik list-user-installed-packages.txt został pobrany"
 msgid "Read error: %s"
 msgstr "Błąd odczytu: %s"
 
+msgid "Executing apk update command"
+msgstr "Wykonuję polecenie apk update"
+
+msgid "Waiting for the apk update command to complete…"
+msgstr "Proszę czekać... na zakończenie polecenia apk update…"
+
 msgid "Installation completed"
 msgstr "Instalacja zakończona"
+
+msgid "Internet connection is required to install packages. Please connect to the internet and refresh the page."
+msgstr "Do instalowania pakietów wymagane jest połączenie z internetem. Proszę połączyć się z internetem i odświeżyć stronę."
 
 msgid "Installing: "
 msgstr "Instalowanie: "

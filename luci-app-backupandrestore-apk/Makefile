@@ -12,8 +12,8 @@ PKG_MAINTAINER:=Rafał Wabik <4Rafal@gmail.com>
 LUCI_DESCRIPTION:=LuCI JS interface for the backupandrestore-apk script.
 LUCI_PKGARCH:=all
 LUCI_DEPENDS:=+luci-base
-PKG_VERSION:=1.0.3
-PKG_RELEASE:=20260201
+PKG_VERSION:=1.0.4
+PKG_RELEASE:=20260207
 
 define Package/luci-app-backupandrestore-apk/conffiles
 /etc/backup/list-user-installed-packages.txt

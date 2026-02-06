@@ -5,13 +5,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Backup and restore packages"
-msgstr "Sauvegarde et restauration de paquets"
+msgstr "Sauvegarde et restauration des paquets"
 
 msgid "Backup and Restore APK Packages"
-msgstr "Sauvegarde et restauration de paquets APK"
+msgstr "Sauvegarde et restauration des paquets APK"
 
 msgid "Package allows user to create a list of installed packages and reinstall packages from this list."
-msgstr "Le paquet permet à l'utilisateur de créer une liste des paquets installés et de réinstaller des paquets à partir de cette liste."
+msgstr "Le paquet permet à l'utilisateur de créer une liste de paquets installés et de réinstaller des paquets à partir de cette liste."
 
 msgid "Installation progress:"
 msgstr "Progression de l'installation :"
@@ -56,7 +56,7 @@ msgid "Error clearing list: %s"
 msgstr "Erreur lors de l'effacement de la liste : %s"
 
 msgid "Please wait... installing packages from list"
-msgstr "Veuillez patienter... installation des paquets de la liste en cours"
+msgstr "Veuillez patienter... installation des paquets de la liste"
 
 msgid "Package list"
 msgstr "Liste des paquets"
@@ -68,7 +68,7 @@ msgid "Package name"
 msgstr "Nom du paquet"
 
 msgid "Installing..."
-msgstr "Installation en cours..."
+msgstr "Installation..."
 
 msgid "Installed"
 msgstr "Installé"
@@ -80,10 +80,10 @@ msgid "Click \"Create list\" to save installed packages"
 msgstr "Cliquez sur \"Créer la liste\" pour enregistrer les paquets installés"
 
 msgid "Creating package list"
-msgstr "Création de la liste de paquets"
+msgstr "Création de la liste des paquets"
 
 msgid "Saving package list..."
-msgstr "Enregistrement de la liste de paquets..."
+msgstr "Enregistrement de la liste des paquets..."
 
 msgid "List created. Saved %d packages."
 msgstr "Liste créée. %d paquets enregistrés."
@@ -97,8 +97,8 @@ msgstr "Erreur : %s"
 msgid "No packages. Create list first."
 msgstr "Aucun paquet. Créez d'abord une liste."
 
-msgid "Confirmation"
-msgstr "Confirmation"
+msgid "Installation confirmation"
+msgstr "Confirmation de l'installation"
 
 msgid "Install %d packages from list?"
 msgstr "Installer %d paquets de la liste ?"
@@ -130,8 +130,17 @@ msgstr "Fichier list-user-installed-packages.txt téléchargé"
 msgid "Read error: %s"
 msgstr "Erreur de lecture : %s"
 
+msgid "Executing apk update command"
+msgstr "Exécution de la commande apk update"
+
+msgid "Waiting for the apk update command to complete…"
+msgstr "En attente de la fin de la commande apk update…"
+
 msgid "Installation completed"
 msgstr "Installation terminée"
+
+msgid "Internet connection is required to install packages. Please connect to the internet and refresh the page."
+msgstr "Une connexion Internet est requise pour installer les paquets. Veuillez vous connecter à Internet et actualiser la page."
 
 msgid "Installing: "
 msgstr "Installation : "
@@ -140,7 +149,7 @@ msgid "Installing packages"
 msgstr "Installation des paquets"
 
 msgid "Editing package lists"
-msgstr "Modification des listes de paquets"
+msgstr "Modification de la liste des paquets"
 
 msgid "The window allows the user to edit the list of installed packages."
 msgstr "La fenêtre permet à l'utilisateur de modifier la liste des paquets installés."
@@ -179,16 +188,16 @@ msgid "Package \"%s\" removed from list"
 msgstr "Le paquet \"%s\" a été retiré de la liste"
 
 msgid "Error removing package: "
-msgstr "Erreur lors du retrait du paquet : "
+msgstr "Erreur lors de la suppression du paquet : "
 
 msgid "Uninstalling..."
-msgstr "Désinstallation en cours..."
+msgstr "Désinstallation..."
 
 msgid "Uninstall package \"%s\"? This will remove the package from your system."
 msgstr "Désinstaller le paquet \"%s\" ? Cela supprimera le paquet de votre système."
 
 msgid "Please wait... Uninstalling package \"%s\""
-msgstr "Veuillez patienter... Désinstallation du paquet \"%s\" en cours"
+msgstr "Veuillez patienter... Désinstallation du paquet \"%s\""
 
 msgid "Package \"%s\" uninstalled successfully"
 msgstr "Le paquet \"%s\" a été désinstallé avec succès"

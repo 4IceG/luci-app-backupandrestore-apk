@@ -1,15 +1,14 @@
 msgid ""
 msgstr ""
 "Language: vi\n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Backup and restore packages"
-msgstr "Sao lưu và khôi phục gói"
+msgstr "Sao lưu và khôi phục các gói"
 
 msgid "Backup and Restore APK Packages"
-msgstr "Sao lưu và khôi phục gói APK"
+msgstr "Sao lưu và khôi phục các gói APK"
 
 msgid "Package allows user to create a list of installed packages and reinstall packages from this list."
 msgstr "Gói cho phép người dùng tạo danh sách các gói đã cài đặt và cài đặt lại các gói từ danh sách này."
@@ -27,7 +26,7 @@ msgid "Create list"
 msgstr "Tạo danh sách"
 
 msgid "Install packages from list"
-msgstr "Cài đặt gói từ danh sách"
+msgstr "Cài đặt các gói từ danh sách"
 
 msgid "List file actions:"
 msgstr "Hành động tệp danh sách:"
@@ -45,19 +44,19 @@ msgid "Confirm clear list"
 msgstr "Xác nhận xóa danh sách"
 
 msgid "Are you sure you want to clear the package list?"
-msgstr "Bạn có chắc chắn muốn xóa danh sách gói?"
+msgstr "Bạn có chắc chắn muốn xóa danh sách gói không?"
 
 msgid "Clear"
 msgstr "Xóa"
 
 msgid "List cleared"
-msgstr "Đã xóa danh sách"
+msgstr "Danh sách đã được xóa"
 
 msgid "Error clearing list: %s"
 msgstr "Lỗi khi xóa danh sách: %s"
 
 msgid "Please wait... installing packages from list"
-msgstr "Vui lòng đợi... đang cài đặt gói từ danh sách"
+msgstr "Vui lòng đợi... đang cài đặt các gói từ danh sách"
 
 msgid "Package list"
 msgstr "Danh sách gói"
@@ -78,7 +77,7 @@ msgid "No packages in list"
 msgstr "Không có gói trong danh sách"
 
 msgid "Click \"Create list\" to save installed packages"
-msgstr "Nhấp \"Tạo danh sách\" để lưu các gói đã cài đặt"
+msgstr "Nhấp vào \"Tạo danh sách\" để lưu các gói đã cài đặt"
 
 msgid "Creating package list"
 msgstr "Đang tạo danh sách gói"
@@ -87,7 +86,7 @@ msgid "Saving package list..."
 msgstr "Đang lưu danh sách gói..."
 
 msgid "List created. Saved %d packages."
-msgstr "Đã tạo danh sách. Đã lưu %d gói."
+msgstr "Danh sách đã được tạo. Đã lưu %d gói."
 
 msgid "Error creating list."
 msgstr "Lỗi khi tạo danh sách."
@@ -96,10 +95,10 @@ msgid "Error: %s"
 msgstr "Lỗi: %s"
 
 msgid "No packages. Create list first."
-msgstr "Không có gói. Tạo danh sách trước."
+msgstr "Không có gói. Hãy tạo danh sách trước."
 
-msgid "Confirmation"
-msgstr "Xác nhận"
+msgid "Installation confirmation"
+msgstr "Xác nhận cài đặt"
 
 msgid "Install %d packages from list?"
 msgstr "Cài đặt %d gói từ danh sách?"
@@ -114,7 +113,7 @@ msgid "Waiting for installation..."
 msgstr "Đang chờ cài đặt..."
 
 msgid "Error monitoring progress"
-msgstr "Lỗi khi theo dõi tiến trình"
+msgstr "Lỗi giám sát tiến trình"
 
 msgid "Installation error"
 msgstr "Lỗi cài đặt"
@@ -126,19 +125,28 @@ msgid "Write error: %s"
 msgstr "Lỗi ghi: %s"
 
 msgid "File list-user-installed-packages.txt downloaded"
-msgstr "Đã tải xuống tệp list-user-installed-packages.txt"
+msgstr "Tệp list-user-installed-packages.txt đã được tải xuống"
 
 msgid "Read error: %s"
 msgstr "Lỗi đọc: %s"
 
+msgid "Executing apk update command"
+msgstr "Đang thực hiện lệnh apk update"
+
+msgid "Waiting for the apk update command to complete…"
+msgstr "Đang chờ lệnh apk update hoàn thành…"
+
 msgid "Installation completed"
-msgstr "Hoàn tất cài đặt"
+msgstr "Cài đặt hoàn tất"
+
+msgid "Internet connection is required to install packages. Please connect to the internet and refresh the page."
+msgstr "Cần có kết nối internet để cài đặt các gói. Vui lòng kết nối internet và làm mới trang."
 
 msgid "Installing: "
 msgstr "Đang cài đặt: "
 
 msgid "Installing packages"
-msgstr "Đang cài đặt gói"
+msgstr "Đang cài đặt các gói"
 
 msgid "Editing package lists"
 msgstr "Chỉnh sửa danh sách gói"
@@ -192,7 +200,7 @@ msgid "Please wait... Uninstalling package \"%s\""
 msgstr "Vui lòng đợi... Đang gỡ cài đặt gói \"%s\""
 
 msgid "Package \"%s\" uninstalled successfully"
-msgstr "Gỡ cài đặt gói \"%s\" thành công"
+msgstr "Gói \"%s\" đã được gỡ cài đặt thành công"
 
 msgid "Error uninstalling package: "
 msgstr "Lỗi khi gỡ cài đặt gói: "

@@ -52,7 +52,7 @@ case "$1" in
 		
 	restore)
 		if [ ! -s $BACKUPDIR/$PKGSLIST ]; then
-			echo "{\"success\":false,\"error\":\"Brak listy pakietów\"}"
+			echo "{\"success\":false,\"error\":\"No package list\"}"
 			exit 0
 		fi
 
@@ -62,9 +62,11 @@ case "$1" in
 			FAILED=0
 			
 			echo "running" > $STATUS_FILE
-			echo "0:$TOTAL" > $PROGRESS_FILE
+			echo "0:$TOTAL:apk update" > $PROGRESS_FILE
 			
 			apk update >/dev/null 2>&1
+			
+			sleep 7
 			
 			while read -r pkg; do
 				if [ -n "$pkg" ]; then
@@ -84,7 +86,7 @@ case "$1" in
 			rm -f $PROGRESS_FILE $STATUS_FILE
 		} &
 		
-		echo "{\"success\":true,\"message\":\"Instalacja rozpoczęta\"}"
+		echo "{\"success\":true,\"message\":\"Installation started\"}"
 		;;
 		
 	progress)
@@ -116,6 +118,11 @@ case "$1" in
 			COUNT=$(wc -l < $BACKUPDIR/$PKGSLIST)
 			echo "{\"success\":true,\"count\":$COUNT,\"exists\":true}"
 		fi
+		;;
+		
+	reset)
+		rm -f $PROGRESS_FILE $STATUS_FILE
+		echo "{\"success\":true}"
 		;;
 		
 	*)

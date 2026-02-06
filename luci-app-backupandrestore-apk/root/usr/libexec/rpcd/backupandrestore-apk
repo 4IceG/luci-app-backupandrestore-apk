@@ -28,6 +28,8 @@ case "$1" in
 		json_close_object
 		json_add_object "count"
 		json_close_object
+		json_add_object "reset"
+		json_close_object
 		json_dump
 		;;
 	call)
@@ -46,6 +48,9 @@ case "$1" in
 				;;
 			count)
 				$LIBEXEC count
+				;;
+			reset)
+				$LIBEXEC reset
 				;;
 		esac
 		;;

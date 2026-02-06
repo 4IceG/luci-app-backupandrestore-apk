@@ -1,0 +1,212 @@
+msgid ""
+msgstr ""
+"Language: zh_CN\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Backup and restore packages"
+msgstr "备份和恢复软件包"
+
+msgid "Backup and Restore APK Packages"
+msgstr "备份和恢复 APK 软件包"
+
+msgid "Package allows user to create a list of installed packages and reinstall packages from this list."
+msgstr "该软件包允许用户创建已安装软件包的列表并从此列表重新安装软件包。"
+
+msgid "Installation progress:"
+msgstr "安装进度："
+
+msgid "Number of packages in list:"
+msgstr "列表中的软件包数量："
+
+msgid "Actions:"
+msgstr "操作："
+
+msgid "Create list"
+msgstr "创建列表"
+
+msgid "Install packages from list"
+msgstr "从列表安装软件包"
+
+msgid "List file actions:"
+msgstr "列表文件操作："
+
+msgid "Load list"
+msgstr "加载列表"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Clear"
+msgstr "清除"
+
+msgid "Confirm clear list"
+msgstr "确认清除列表"
+
+msgid "Are you sure you want to clear the package list?"
+msgstr "您确定要清除软件包列表吗？"
+
+msgid "Clear"
+msgstr "清除"
+
+msgid "List cleared"
+msgstr "列表已清除"
+
+msgid "Error clearing list: %s"
+msgstr "清除列表时出错：%s"
+
+msgid "Please wait... installing packages from list"
+msgstr "请稍候...正在从列表安装软件包"
+
+msgid "Package list"
+msgstr "软件包列表"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Package name"
+msgstr "软件包名称"
+
+msgid "Installing..."
+msgstr "正在安装..."
+
+msgid "Installed"
+msgstr "已安装"
+
+msgid "No packages in list"
+msgstr "列表中没有软件包"
+
+msgid "Click \"Create list\" to save installed packages"
+msgstr "点击"创建列表"以保存已安装的软件包"
+
+msgid "Creating package list"
+msgstr "正在创建软件包列表"
+
+msgid "Saving package list..."
+msgstr "正在保存软件包列表..."
+
+msgid "List created. Saved %d packages."
+msgstr "列表已创建。已保存 %d 个软件包。"
+
+msgid "Error creating list."
+msgstr "创建列表时出错。"
+
+msgid "Error: %s"
+msgstr "错误：%s"
+
+msgid "No packages. Create list first."
+msgstr "没有软件包。请先创建列表。"
+
+msgid "Installation confirmation"
+msgstr "安装确认"
+
+msgid "Install %d packages from list?"
+msgstr "从列表安装 %d 个软件包？"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Install"
+msgstr "安装"
+
+msgid "Waiting for installation..."
+msgstr "等待安装..."
+
+msgid "Error monitoring progress"
+msgstr "监控进度时出错"
+
+msgid "Installation error"
+msgstr "安装错误"
+
+msgid "File list-user-installed-packages.txt has been loaded"
+msgstr "文件 list-user-installed-packages.txt 已加载"
+
+msgid "Write error: %s"
+msgstr "写入错误：%s"
+
+msgid "File list-user-installed-packages.txt downloaded"
+msgstr "文件 list-user-installed-packages.txt 已下载"
+
+msgid "Read error: %s"
+msgstr "读取错误：%s"
+
+msgid "Executing apk update command"
+msgstr "正在执行 apk update 命令"
+
+msgid "Waiting for the apk update command to complete…"
+msgstr "等待 apk update 命令完成…"
+
+msgid "Installation completed"
+msgstr "安装完成"
+
+msgid "Internet connection is required to install packages. Please connect to the internet and refresh the page."
+msgstr "安装软件包需要互联网连接。请连接互联网并刷新页面。"
+
+msgid "Installing: "
+msgstr "正在安装："
+
+msgid "Installing packages"
+msgstr "正在安装软件包"
+
+msgid "Editing package lists"
+msgstr "编辑软件包列表"
+
+msgid "The window allows the user to edit the list of installed packages."
+msgstr "该窗口允许用户编辑已安装软件包的列表。"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Undo"
+msgstr "撤销"
+
+msgid "Unable to reload the file"
+msgstr "无法重新加载文件"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Package list has been saved"
+msgstr "软件包列表已保存"
+
+msgid "Unable to save the file"
+msgstr "无法保存文件"
+
+msgid "Read error: "
+msgstr "读取错误："
+
+msgid "Remove from list"
+msgstr "从列表中删除"
+
+msgid "Remove..."
+msgstr "删除..."
+
+msgid "Remove \"%s\" from the package list?"
+msgstr "从软件包列表中删除"%s"？"
+
+msgid "Package \"%s\" removed from list"
+msgstr "软件包"%s"已从列表中删除"
+
+msgid "Error removing package: "
+msgstr "删除软件包时出错："
+
+msgid "Uninstalling..."
+msgstr "正在卸载..."
+
+msgid "Uninstall package \"%s\"? This will remove the package from your system."
+msgstr "卸载软件包"%s"？这将从您的系统中删除该软件包。"
+
+msgid "Please wait... Uninstalling package \"%s\""
+msgstr "请稍候...正在卸载软件包"%s""
+
+msgid "Package \"%s\" uninstalled successfully"
+msgstr "软件包"%s"已成功卸载"
+
+msgid "Error uninstalling package: "
+msgstr "卸载软件包时出错："
+
+msgid "Refresh package list"
+msgstr "刷新软件包列表"
+
+msgid "Refresh"
+msgstr "刷新"

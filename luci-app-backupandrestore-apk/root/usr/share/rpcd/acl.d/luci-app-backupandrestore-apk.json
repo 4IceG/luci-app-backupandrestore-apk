@@ -11,6 +11,8 @@
 			},
 			"file": {
 				"/etc/backup/list-user-installed-packages.txt": ["read"],
+				"/tmp/pkg_install_progress": ["read"],
+				"/tmp/pkg_install_status": ["read"],
 				"/usr/bin/opkg list-installed": ["exec"],
 				"/usr/libexec/package-manager-call list-installed": ["exec"],
 				"/usr/libexec/opkg-list installed": ["exec"],
@@ -21,11 +23,14 @@
 			"ubus": {
 				"backupandrestore-apk": [
 					"backup",
-					"restore"
+					"restore",
+					"reset"
 				]
 			},
 			"file": {
 				"/etc/backup/list-user-installed-packages.txt": ["write"],
+				"/tmp/pkg_install_progress": ["write"],
+				"/tmp/pkg_install_status": ["write"],
 				"/usr/bin/opkg remove": ["exec"],
 				"/usr/libexec/package-manager-call remove": ["exec"],
 				"/usr/libexec/opkg-call remove": ["exec"]
